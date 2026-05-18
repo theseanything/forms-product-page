@@ -70,8 +70,6 @@ COPY --chown=ruby:ruby --from=build /usr/local/bundle /usr/local/bundle
 COPY --chown=ruby:ruby --from=build /app /app
 
 RUN mkdir -p "/app/tmp/" && chown ruby:ruby "/app/tmp/"
-VOLUME "/tmp/"
-VOLUME "/app/tmp/"
 
 EXPOSE 3000
 
